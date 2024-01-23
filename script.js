@@ -10,9 +10,8 @@ let computerScore = 0;
 function playRound(playerSelection, computerSelection) {
     if (computerSelection === playerSelection) {
         console.log( "You make the same choice. Nobody win the game. Try again !");
-        playRound();
+        // playRound();
     }
-
 
    if (computerSelection === "rock" && playerSelection === "scissors") {
         console.log("Rock wins against scissors");
@@ -37,24 +36,23 @@ function playRound(playerSelection, computerSelection) {
         playerScore +=1
     } 
 
-
-  
     }
        
-    const computerSelection = getComputerChoice();
+ 
+
+
 
     function game(){
         for (let i = 0; i < 5; i++){
-           let playerSelection= " ";
-            playerSelection = prompt("rock, paper or scissors ?");
+            let computerSelection = getComputerChoice();
+            let playerSelection = prompt("rock, paper or scissors ?");
             playRound(playerSelection, computerSelection)
             console.log("Player score is " + playerScore + " and computer score is " + computerScore)    
         }
-
     }
 
 
-
+game()
 
  
 //   console.log(playRound(playerSelection, computerSelection));
