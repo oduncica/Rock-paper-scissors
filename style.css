@@ -2,3 +2,57 @@ body {
     margin: 0;
     background-color: #B67332;
 }
+
+h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button {
+    margin-top: 20px;
+    background-color:  #93441A;
+    border : 2px solid #93441A;
+    color: white;
+    border-radius: 9px;
+    font-size: 17px;
+
+    
+}
+
+.score{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+img {
+    height: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.img-btn 
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+}

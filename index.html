@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <h2> ROCK PAPER SCISSORS GAME</h2>
+
     <div class="buttons">
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+        <div class="img-btn">
+            <img src="rock.png" alt="rock-image">
+            <button class="rock">Rock</button>
+        </div>
+        <div class="img-btn">
+            <img src="paper.png" alt="paper-image">
+            <button class="paper">Paper</button>
+        </div>
+        <div class="img-btn">
+            <img src="scissor.png" alt="scissor-image">
+            <button class="scissors">Scissors</button>
+        </div>
+    </div>
+
+    <div class="score">
+        <p class="scoreP">Player score :</p>
+        <p class="scoreC">Computer score :</p>
     </div>
     
 </body>
