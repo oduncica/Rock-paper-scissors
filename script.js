@@ -44,7 +44,7 @@ function playRound(playerSelection, computerSelection) {
     function game(){
         for (let i = 0; i < 5; i++){
             let computerSelection = getComputerChoice()
-            let playerSelection = prompt("rock, paper or scissors ?").toLowerCase;
+            let playerSelection = prompt("rock, paper or scissors ?").toLowerCase();
             playRound(playerSelection, computerSelection)
             console.log("Player score is " + playerScore + " and computer score is " + computerScore)    
         }
